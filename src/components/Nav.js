@@ -22,43 +22,23 @@ const Nav = () => {
 
   return (
     <nav className="navbar">
-      <div className="brand-title">corygold.dev</div>
+      <div className="brand-title">Gold Standard</div>
       <ul className={burgerClicked ? "nav-links nav-active" : "nav-links"}>
         <li onClick={handleBurger}>
-          <a href="#about">/about</a>
+          <a href="#about">About</a>
         </li>
         <li onClick={handleBurger}>
-          <a href="#projects">/projects</a>
+          <a href="#projects">Dogs</a>
+        </li>
+
+        <li onClick={handleBurger}>
+          <a href="mailto:goldcorum@gmail.com">Email</a>
         </li>
         <li onClick={handleBurger}>
-          <a
-            href="https://github.com/corumgold"
-            target="_blank"
-            rel="noreferrer"
-          >
-            /github
-          </a>
+          <a href="tel:14235092278">Call</a>
         </li>
         <li onClick={handleBurger}>
-          <a
-            href="https://www.linkedin.com/in/corygold/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            /linkedIn
-          </a>
-        </li>
-        <li onClick={handleBurger}>
-          <a
-            href={process.env.PUBLIC_URL + "/Cory Gold Resume.pdf"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            /resume
-          </a>
-        </li>
-        <li onClick={handleBurger}>
-          <a href="mailto:goldcorum@gmail.com">/email</a>
+          <a href="sms:14235092278">Text</a>
         </li>
       </ul>
       <div
