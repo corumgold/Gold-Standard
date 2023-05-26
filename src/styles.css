@@ -18,7 +18,7 @@
   justify-content: center;
   padding: 1rem;
   height: 100vh;
-  background-color: #e0fbfc;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -41,7 +41,7 @@
   }
 }
 .intro span {
-  color: #ee6c4d;
+  color: #fca311;
   font-family: Monaco, Consolas, Lucida Console, monospace;
   font-size: 0.8em;
 }
@@ -62,8 +62,8 @@
   }
 }
 .intro h1 {
-  font-size: 3rem;
-  color: #023047;
+  font-size: 7rem;
+  color: #000000;
   animation: fadeIn 2s;
 }
 @media screen and (max-width: 1200px) {
@@ -95,11 +95,11 @@
   }
 }
 h2.big-header {
-  color: #ee6c4d;
+  color: #fca311;
   font-family: Monaco, Consolas, Lucida Console, monospace;
 }
 .about-me {
-  background-color: #98c1d9;
+  background-color: #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +107,7 @@ h2.big-header {
   padding: 6rem 2rem;
 }
 .profile-picture img {
-  border: 10px solid #ee6c4d;
+  border: 10px solid #fca311;
   border-radius: 100%;
   margin-bottom: 2rem;
   width: 300px;
@@ -173,7 +173,7 @@ h2.big-header {
 .array-item span,
 .about-me-response span {
   font-family: Monaco, Consolas, Lucida Console, monospace;
-  color: #ee6c4d;
+  color: #fca311;
 }
 .bio {
   display: block;
@@ -181,7 +181,7 @@ h2.big-header {
 }
 #console-log {
   font-family: Monaco, Consolas, Lucida Console, monospace;
-  color: #98c1d9;
+  color: #e5e5e5;
 }
 .home-projects h4 {
   align-self: center;
@@ -189,7 +189,7 @@ h2.big-header {
 }
 .about-me h4 {
   font-size: 4rem;
-  color: #ee6c4d;
+  color: #fca311;
   font-family: Monaco, Consolas, Lucida Console, monospace;
   margin-bottom: 2em;
 }
@@ -200,7 +200,7 @@ h2.big-header {
 }
 .about-me h4:after {
   content: " ";
-  border: 4px solid #3d5a80;
+  border: 4px solid #14213d;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -272,7 +272,7 @@ h2.big-header {
   justify-content: center;
   padding: 0.5rem;
   margin: 8px;
-  background-color: #98c1d9;
+  background-color: #e5e5e5;
   border-radius: 10px;
   font: inherit;
   font-weight: 700;
@@ -304,7 +304,7 @@ h2.big-header {
   }
 }
 .tool {
-  border: 2px solid #ee6c4d;
+  border: 2px solid #fca311;
   margin: 0.5rem;
   padding: 0 0.5rem;
   border-radius: 5px;
@@ -358,7 +358,7 @@ h2.big-header {
 }
 .home-projects h4 {
   font-size: 4rem;
-  color: #ee6c4d;
+  color: #fca311;
   font-family: Monaco, Consolas, Lucida Console, monospace;
   margin-bottom: 2em;
 }
@@ -369,14 +369,14 @@ h2.big-header {
 }
 .home-projects h4:after {
   content: " ";
-  border: 4px solid #3d5a80;
+  border: 4px solid #14213d;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   width: 100px;
 }
 .footer {
-  background-color: #98c1d9;
+  background-color: #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,7 +405,7 @@ h2.big-header {
   width: 100vw;
   z-index: 1;
   justify-content: space-around;
-  background-color: #ee6c4d;
+  background-color: #fca311;
   min-height: 6vh;
 }
 .brand-title {
@@ -429,7 +429,7 @@ h2.big-header {
   transition: 200ms;
 }
 .nav-links a:hover {
-  color: #98c1d9;
+  color: #e5e5e5;
 }
 .nav-icon {
   width: 15px;
@@ -441,7 +441,7 @@ h2.big-header {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #023047;
+  background-color: #000000;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -454,7 +454,7 @@ h2.big-header {
     right: 0px;
     height: 94vh;
     top: 6vh;
-    background: #ee6c4d;
+    background: #fca311;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -623,7 +623,7 @@ h2.big-header {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  color: #023047;
+  color: #000000;
   box-sizing: border-box;
 }
 body {
