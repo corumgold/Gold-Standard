@@ -9,9 +9,6 @@
   justify-content: center;
   flex-direction: column;
 }
-.codeFont {
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-}
 .hero {
   display: flex;
   align-items: center;
@@ -42,7 +39,6 @@
 }
 .intro span {
   color: #fca311;
-  font-family: Monaco, Consolas, Lucida Console, monospace;
   font-size: 0.8em;
 }
 @keyframes fadeIn {
@@ -96,7 +92,6 @@
 }
 h2.big-header {
   color: #fca311;
-  font-family: Monaco, Consolas, Lucida Console, monospace;
 }
 .about-me {
   background-color: #e5e5e5;
@@ -117,94 +112,75 @@ h2.big-header {
     width: 250px;
   }
 }
-#about-me-code {
-  background-color: #f3f5f8;
-  border-radius: 15px 15px 5px 5px;
+#about-me-block {
+  background-color: #14213d;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-#about-me-header {
-  background-color: #8e9aaf;
-  height: 25px;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: center;
-}
-.circle {
-  width: 17px;
-  height: 17px;
-  border-radius: 100%;
-  background-color: #2a9d8f;
-  margin-left: 10px;
-}
-.circle:nth-last-of-type(2) {
-  background-color: #e9c46a;
-}
-.circle:nth-last-of-type(3) {
-  background-color: #e76f51;
 }
 .about-me-entry {
   padding: 1rem 2rem;
   font-size: 1.5rem;
+  color: #ffffff;
   max-width: 800px;
   flex: 1 1 0;
 }
 @media screen and (max-width: 768px) {
-  .about-me-entry {
-    font-size: 1rem;
-  }
 }
 @media screen and (max-width: 480px) {
   .about-me-entry {
     font-size: 0.8rem;
   }
 }
-.about-me-query {
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-}
-.about-me-response,
-.about-me-array {
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-}
-.array-item {
-  text-indent: 3rem;
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-  list-style-type: none;
-}
-.array-item span,
-.about-me-response span {
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-  color: #fca311;
-}
 .bio {
   display: block;
   margin-top: 20px;
-}
-#console-log {
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-  color: #e5e5e5;
 }
 .home-projects h4 {
   align-self: center;
   padding-top: 4rem;
 }
-.about-me h4 {
+.about-me h3 {
   font-size: 4rem;
   color: #fca311;
-  font-family: Monaco, Consolas, Lucida Console, monospace;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 @media screen and (max-width: 800px), screen and (max-height: 400px) {
-  .about-me h4 {
+  .about-me h3 {
     font-size: 3rem;
   }
 }
-.about-me h4:after {
+.about-me h3:after {
   content: " ";
   border: 4px solid #14213d;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   width: 100px;
+}
+.about-me h4 {
+  font-size: 3rem;
+  color: #fca311;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+  .about-me h4 {
+    font-size: 2rem;
+  }
+}
+.about-me h5 {
+  font-size: 2rem;
+  color: #14213d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+  .about-me h5 {
+    font-size: 1.5rem;
+  }
 }
 .home-projects {
   display: flex;
@@ -359,7 +335,6 @@ h2.big-header {
 .home-projects h4 {
   font-size: 4rem;
   color: #fca311;
-  font-family: Monaco, Consolas, Lucida Console, monospace;
   margin-bottom: 2em;
 }
 @media screen and (max-width: 800px), screen and (max-height: 400px) {
