@@ -11,9 +11,9 @@ const Hero = () => {
           <h1>Gold Standard</h1>
           <h2 className="big-header">Dog Training</h2>
           <p>
-            Where a <span>dog's</span> world{" "}
-            and a <span>human's</span> world{" "}
-            become <span>one</span>.
+            Bringing <span>joy</span> and <span>peace</span>{" "}
+            into the lives of{" "}
+            <span>you</span> and your <span>dog</span>.
           </p>
         </div>
       </div>
