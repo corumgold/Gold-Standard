@@ -101,6 +101,12 @@ h2.big-header {
   flex-direction: column;
   padding: 6rem 2rem;
 }
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .profile-picture img {
   border: 10px solid #fca311;
   border-radius: 100%;
@@ -116,6 +122,7 @@ h2.big-header {
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 3em;
 }
 .about-me-entry {
   padding: 1rem 2rem;
@@ -172,6 +179,7 @@ h2.big-header {
 .about-me h5 {
   font-size: 2rem;
   color: #14213d;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
