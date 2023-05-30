@@ -22,8 +22,8 @@ const Hero = () => {
       </div>
       <AboutMe />
       {/* <Projects /> */}
-      <Footer />
       <Form />
+      <Footer />
     </>
   );
 };

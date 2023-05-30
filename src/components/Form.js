@@ -4,13 +4,12 @@ const Form = () => {
   const [form, setForm] = useState({
     humanName: "",
     dogName: "",
-    dogAge: 0,
+    dogAge: "",
     breed: "",
-    background: "",
     crateTrained: "",
     bite: "",
+    background: "",
   });
-
 
   function handleFormChange(e) {
     const key = e.target.name;
@@ -19,14 +18,13 @@ const Form = () => {
   }
 
   async function handleFormSubmit(e) {
-      e.preventDefault();
-  console.log(form);
-      
+    e.preventDefault();
+    console.log(form);
   }
 
   return (
     <div id="form-page">
-      <h2>Submit Your Form</h2>
+      <h3>Contact Us</h3>
       <form id="consult-form">
         <label>
           Your Name:
@@ -65,7 +63,36 @@ const Form = () => {
           />
         </label>
         <label>
-          Background:
+          Is {form.dogName ? form.dogName : "your dog"} crate trained?:{" "}
+          <select name="crateTrained" onChange={handleFormChange}>
+            <option selected disabled></option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+        <label>
+          Has {form.dogName ? form.dogName : "your dog"} ever bitten anyone?
+          (it's okay if so!):{" "}
+          <select name="bite" onChange={handleFormChange}>
+            <option selected disabled></option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+        {form.bite === "yes" ? (
+          <label>
+            Tell us a bit more about {form.dogName ? form.dogName : "your dog"}
+            's bite history:
+            <input
+              value={form.background}
+              type="text-box"
+              name="background"
+              onChange={handleFormChange}
+            />
+          </label>
+        ) : null}
+        <label>
+          Any other details we should know?:
           <input
             value={form.background}
             type="text-box"
@@ -73,30 +100,8 @@ const Form = () => {
             onChange={handleFormChange}
           />
         </label>
-        <label>
-          Is {form.dogName ? form.dogName : "your dog"} crate trained?:
-          <select name="crateTrained" onChange={handleFormChange}>
-            <option selected disabled>
-              Please Choose
-            </option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </label>
-        <label>
-          Has {form.dogName ? form.dogName : "your dog"} ever bitten anyone?:
-          <select name="bite" onChange={handleFormChange}>
-            <option selected disabled>
-              Please Choose
-            </option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </label>
+        <button onClick={handleFormSubmit}>Submit Form</button>
       </form>
-      <button onClick={handleFormSubmit}>Submit Form</button>
-      <div>Image Preview</div>
-      <img src={form.image} alt={form.name} />
     </div>
   );
 };
