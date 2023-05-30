@@ -32,7 +32,7 @@ const Nav = () => {
         </li>
 
         <li onClick={handleBurger}>
-          <a href="mailto:goldcorum@gmail.com">Email</a>
+          <a href="mailto:goldstandard.dog@gmail.com">Email</a>
         </li>
         <li onClick={handleBurger}>
           <a href="tel:14235092278">Call</a>

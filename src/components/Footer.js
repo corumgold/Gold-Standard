@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div id="footer" className="footer">
       <div className="links">
-        <a href="mailto:goldcorum@gmail.com">
+        <a href="mailto:goldstandard.dog@gmail.com">
           <img
             className="social-icon"
             src={process.env.PUBLIC_URL + "/images/email.png"}
