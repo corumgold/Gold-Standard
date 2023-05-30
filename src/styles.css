@@ -15,7 +15,7 @@
   justify-content: center;
   padding: 1rem;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -35,8 +35,8 @@
 @media screen and (max-width: 768px) {
 }
 .intro span {
-  color: #fca311;
-  font-size: 0.8em;
+  color: #ffd700;
+  font-weight: bold;
 }
 @keyframes fadeIn {
   from {
@@ -56,7 +56,7 @@
 }
 .intro h1 {
   font-size: 7rem;
-  color: #fca311;
+  color: #ffd700;
   animation: fadeIn 2s;
 }
 @media screen and (max-width: 1200px) {
@@ -85,10 +85,10 @@
   }
 }
 h2.big-header {
-  color: #000000;
+  color: #414040;
 }
 .about-me {
-  background-color: #e5e5e5;
+  background-color: #bbb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@ h2.big-header {
   flex-direction: column;
 }
 .profile-picture img {
-  border: 10px solid #fca311;
+  border: 10px solid #ffd700;
   border-radius: 100%;
   margin-bottom: 2rem;
   width: 300px;
@@ -113,7 +113,7 @@ h2.big-header {
   }
 }
 #about-me-block {
-  background-color: #ffffff;
+  background-color: #efefef;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   margin-bottom: 3em;
@@ -142,7 +142,7 @@ h2.big-header {
 }
 .about-me h3 {
   font-size: 4rem;
-  color: #fca311;
+  color: #ffd700;
   margin-bottom: 1em;
 }
 @media screen and (max-width: 800px), screen and (max-height: 400px) {
@@ -160,7 +160,7 @@ h2.big-header {
 }
 .about-me h4 {
   font-size: 3rem;
-  color: #fca311;
+  color: #ffd700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +250,7 @@ h2.big-header {
   justify-content: center;
   padding: 0.5rem;
   margin: 8px;
-  background-color: #e5e5e5;
+  background-color: #bbb;
   border-radius: 10px;
   font: inherit;
   font-weight: 700;
@@ -282,7 +282,7 @@ h2.big-header {
   }
 }
 .tool {
-  border: 2px solid #fca311;
+  border: 2px solid #ffd700;
   margin: 0.5rem;
   padding: 0 0.5rem;
   border-radius: 5px;
@@ -336,7 +336,7 @@ h2.big-header {
 }
 .home-projects h4 {
   font-size: 4rem;
-  color: #fca311;
+  color: #ffd700;
   margin-bottom: 2em;
 }
 @media screen and (max-width: 800px), screen and (max-height: 400px) {
@@ -353,7 +353,7 @@ h2.big-header {
   width: 100px;
 }
 .footer {
-  background-color: #e5e5e5;
+  background-color: #bbb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,7 +383,7 @@ h2.big-header {
   width: 100vw;
   z-index: 1;
   justify-content: space-around;
-  background-color: #fca311;
+  background-color: #ffd700;
   min-height: 6vh;
 }
 .brand-title {
@@ -407,7 +407,7 @@ h2.big-header {
   transition: 200ms;
 }
 .nav-links a:hover {
-  color: #e5e5e5;
+  color: #bbb;
 }
 .nav-icon {
   width: 15px;
@@ -419,7 +419,7 @@ h2.big-header {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #000000;
+  background-color: #414040;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -432,7 +432,7 @@ h2.big-header {
     right: 0px;
     height: 94vh;
     top: 6vh;
-    background: #fca311;
+    background: #ffd700;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -601,7 +601,7 @@ h2.big-header {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  color: #000000;
+  color: #414040;
   box-sizing: border-box;
 }
 body {
