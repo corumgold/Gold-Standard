@@ -100,6 +100,7 @@ h2.big-header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 2em;
 }
 .profile-picture img {
   border: 10px solid #ffd700;
@@ -128,9 +129,6 @@ h2.big-header {
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 480px) {
-  .about-me-entry {
-    font-size: 0.8rem;
-  }
 }
 .bio {
   display: block;
@@ -224,7 +222,8 @@ h2.big-header {
 .project-content {
   padding: 2rem;
   line-height: 2rem;
-  background-color: rgba(224, 251, 252, 0.4);
+  background-color: #bbb;
+  color: #14213d;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
