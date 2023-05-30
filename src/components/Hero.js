@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
       </div>
       <AboutMe />
-      <Projects />
+      {/* <Projects /> */}
       <Footer />
     </>
   );
