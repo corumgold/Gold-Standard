@@ -2,6 +2,7 @@ import React from "react";
 import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
+import Form from "./Form";
 
 const Hero = () => {
   return (
@@ -22,6 +23,7 @@ const Hero = () => {
       <AboutMe />
       {/* <Projects /> */}
       <Footer />
+      <Form />
     </>
   );
 };

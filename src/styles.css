@@ -470,6 +470,22 @@ h2.big-header {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+#form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#consult-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+#consult-form label {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 1rem;
+}
 @font-face {
   font-family: 'Raleway';
   font-style: italic;
