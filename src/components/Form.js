@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 const Form = () => {
   const [formInfo, setFormInfo] = useState({
     humanName: "",
+    phone: "",
+    email: "",
     dogName: "",
     dogAge: "",
     breed: "",
@@ -45,19 +47,27 @@ const Form = () => {
       <h3>Contact Us</h3>
       <form ref={form} id="consult-form">
         <label>
-          Your Name:
+          Your name:
           <input type="text" name="humanName" onChange={handleFormChange} />
         </label>
         <label>
-          Your dog's Name:
+          Your email:
+          <input type="text" name="email" onChange={handleFormChange} />
+        </label>
+        <label>
+          Your phone number:
+          <input type="text" name="phone" onChange={handleFormChange} />
+        </label>
+        <label>
+          Your dog's name:
           <input type="text" name="dogName" onChange={handleFormChange} />
         </label>
         <label>
-          {formInfo.dogName ? formInfo.dogName : "Your dog"}'s Age:
+          {formInfo.dogName ? formInfo.dogName : "Your dog"}'s age:
           <input type="text" name="dogAge" onChange={handleFormChange} />
         </label>
         <label>
-          {formInfo.dogName ? formInfo.dogName : "Your dog"}'s Breed:
+          {formInfo.dogName ? formInfo.dogName : "Your dog"}'s breed:
           <input type="text" name="breed" onChange={handleFormChange} />
         </label>
         <label>
