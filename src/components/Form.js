@@ -14,6 +14,8 @@ const Form = () => {
     background: "",
   });
 
+  const [modalShown, setModalShown] = useState(false);
+
   function handleFormChange(e) {
     const key = e.target.name;
     const value = e.target.value;
@@ -34,9 +36,15 @@ const Form = () => {
       )
       .then(
         (result) => {
+          setModalShown(
+            "Thank you for submitting your info! We will be in contact with you soon."
+          );
           console.log(result.text);
         },
         (error) => {
+          setModalShown(
+            "There was a problem when submitting your form - please try again."
+          );
           console.log(error.text);
         }
       );
@@ -109,6 +117,10 @@ const Form = () => {
         </label>
         <button onClick={sendEmail}>Submit Form</button>
       </form>
+      <div className={modalShown ? "showModal" : "noModal"}>
+        {modalShown}
+        <button onClick={() => setModalShown(false)}>Close</button>
+      </div>
     </div>
   );
 };

@@ -513,6 +513,42 @@ h3:after {
   background-color: #ffd700;
   transition: 200ms;
 }
+.showModal {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3em;
+  font-size: 3rem;
+  height: 94vh;
+  background-color: #ffd700;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .showModal {
+    font-size: 2rem;
+    width: 80vw;
+  }
+}
+.noModal {
+  display: none;
+}
+.showModal button {
+  background: none;
+  color: inherit;
+  border: 4px solid #efefef;
+  border-radius: 8px;
+  padding: 0.5em;
+  font: inherit;
+  cursor: pointer;
+}
+.showModal button:hover {
+  background-color: #efefef;
+  transition: 200ms;
+}
 @font-face {
   font-family: 'Raleway';
   font-style: italic;
