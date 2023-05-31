@@ -39,9 +39,6 @@ const Nav = () => {
         <li onClick={handleBurger}>
           <a href="tel:14235092278">Call</a>
         </li>
-        <li onClick={handleBurger}>
-          <a href="sms:14235092278">Text</a>
-        </li>
       </ul>
       <div
         onClick={handleBurger}
