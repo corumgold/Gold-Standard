@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-const Project = ({ project }) => {
+const Review = ({ review }) => {
   const { ref: imageRef, inView: imageVisible } = useInView({
     triggerOnce: true,
   });
@@ -11,7 +11,7 @@ const Project = ({ project }) => {
       <div
         className={
           imageVisible
-            ? project.id % 2 === 0
+            ? review.id % 2 === 0
               ? "animate-image-left project-image"
               : "animate-image-right project-image"
             : "project-image"
@@ -20,16 +20,16 @@ const Project = ({ project }) => {
         <img
           ref={imageRef}
           id="proj-image"
-          src={project.image}
-          alt={project.altText}
+          src={review.image}
+          alt={review.altText}
         />
       </div>
       <div className="project-details">
         <div className="project-content">
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
+          <h3>{review.title}</h3>
+          <p>"{review.description}"</p>
           <div className="project-tools">
-            {project.tools.map((tool) => {
+            {review.tools.map((tool) => {
               return <p className="tool">{tool}</p>;
             })}
           </div>
@@ -39,4 +39,4 @@ const Project = ({ project }) => {
   );
 };
 
-export default Project;
+export default Review;

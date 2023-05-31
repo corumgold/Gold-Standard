@@ -1,5 +1,5 @@
 import React from "react";
-import Projects from "./Projects";
+import Reviews from "./Reviews";
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
 import Form from "./Form";
@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
       </div>
       <AboutMe />
-      {/* <Projects /> */}
+      <Reviews />
       <Form />
       <Footer />
     </>
