@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
-  const [form, setForm] = useState({
+  const [formInfo, setFormInfo] = useState({
     humanName: "",
     dogName: "",
     dogAge: "",
@@ -14,93 +15,89 @@ const Form = () => {
   function handleFormChange(e) {
     const key = e.target.name;
     const value = e.target.value;
-    setForm({ ...form, [key]: value });
+    setFormInfo({ ...formInfo, [key]: value });
   }
 
-  async function handleFormSubmit(e) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
-  }
+
+    emailjs
+      .sendForm(
+        "service_w95ec4q",
+        "template_mfem2cb",
+        form.current,
+        "fZAPiD238sWdJSnZx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div id="form-page">
       <h3>Contact Us</h3>
-      <form id="consult-form">
+      <form ref={form} id="consult-form">
         <label>
           Your Name:
-          <input
-            value={form.humanName}
-            type="text"
-            name="humanName"
-            onChange={handleFormChange}
-          />
+          <input type="text" name="humanName" onChange={handleFormChange} />
         </label>
         <label>
           Your dog's Name:
-          <input
-            value={form.dogName}
-            type="text"
-            name="dogName"
-            onChange={handleFormChange}
-          />
+          <input type="text" name="dogName" onChange={handleFormChange} />
         </label>
         <label>
-          {form.dogName ? form.dogName : "Your dog"}'s Age:
-          <input
-            value={form.dogAge}
-            type="text"
-            name="dogAge"
-            onChange={handleFormChange}
-          />
+          {formInfo.dogName ? formInfo.dogName : "Your dog"}'s Age:
+          <input type="text" name="dogAge" onChange={handleFormChange} />
         </label>
         <label>
-          {form.dogName ? form.dogName : "Your dog"}'s Breed:
-          <input
-            value={form.breed}
-            type="text"
-            name="breed"
-            onChange={handleFormChange}
-          />
+          {formInfo.dogName ? formInfo.dogName : "Your dog"}'s Breed:
+          <input type="text" name="breed" onChange={handleFormChange} />
         </label>
         <label>
-          Is {form.dogName ? form.dogName : "your dog"} crate trained?:{" "}
-          <select name="crateTrained" onChange={handleFormChange}>
-            <option selected disabled></option>
+          Is {formInfo.dogName ? formInfo.dogName : "your dog"} crate trained?:{" "}
+          <select
+            defaultValue={"default"}
+            name="crateTrained"
+            onChange={handleFormChange}
+          >
+            <option value="default" disabled></option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
         </label>
         <label>
-          Has {form.dogName ? form.dogName : "your dog"} ever bitten anyone?
-          (it's okay if so!):{" "}
-          <select name="bite" onChange={handleFormChange}>
-            <option selected disabled></option>
+          Has {formInfo.dogName ? formInfo.dogName : "your dog"} ever bitten
+          anyone? (it's okay if so!):{" "}
+          <select
+            defaultValue={"default"}
+            name="bite"
+            onChange={handleFormChange}
+          >
+            <option value="default" disabled></option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
         </label>
-        {form.bite === "yes" ? (
+        {formInfo.bite === "yes" ? (
           <label>
-            Tell us a bit more about {form.dogName ? form.dogName : "your dog"}
+            Tell us a bit more about{" "}
+            {formInfo.dogName ? formInfo.dogName : "your dog"}
             's bite history:
-            <input
-              value={form.background}
-              type="text-box"
-              name="background"
-              onChange={handleFormChange}
-            />
+            <input type="text" name="biteDetails" onChange={handleFormChange} />
           </label>
         ) : null}
         <label>
           Any other details we should know?:
-          <input
-            value={form.background}
-            type="text-box"
-            name="background"
-            onChange={handleFormChange}
-          />
+          <input type="text" name="background" onChange={handleFormChange} />
         </label>
-        <button onClick={handleFormSubmit}>Submit Form</button>
+        <button onClick={sendEmail}>Submit Form</button>
       </form>
     </div>
   );

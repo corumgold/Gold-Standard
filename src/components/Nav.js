@@ -28,9 +28,8 @@ const Nav = () => {
           <a href="#about">About</a>
         </li>
         <li onClick={handleBurger}>
-          <a href="#projects">Dogs</a>
+          <a href="#form-page">Contact Us</a>
         </li>
-
         <li onClick={handleBurger}>
           <a href="mailto:goldstandard.dog@gmail.com">Email</a>
         </li>
