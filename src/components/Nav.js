@@ -28,6 +28,9 @@ const Nav = () => {
           <a href="#about">About</a>
         </li>
         <li onClick={handleBurger}>
+          <a href="#projects">Testimonials</a>
+        </li>
+        <li onClick={handleBurger}>
           <a href="#form-page">Contact Us</a>
         </li>
         <li onClick={handleBurger}>
