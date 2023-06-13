@@ -104,6 +104,7 @@ h2.big-header {
 }
 .profile-picture img {
   border: 10px solid #ffd700;
+  background-color: #efefef;
   border-radius: 100%;
   margin-bottom: 2rem;
   width: 300px;
