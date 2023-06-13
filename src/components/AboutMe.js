@@ -15,22 +15,28 @@ const AboutMe = () => {
         </div>
         <div id="about-me-block">
           <div className="about-me-entry">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut
-            inventore et odit nam, eaque, ipsa, expedita modi sint fugit
-            dolores? Quam nam laudantium expedita delectus dolorum laborum
-            repellendus eius!
+            Marguerite is an AKC Certified Dog Trainer, AKC Fit Dog Instructor,
+            and an IACP Associate Member with 7+ years of professional
+            experience. Her experience ranges from obedience training, behavior
+            modification, and reactivity/aggression rehabilitation. She loves
+            making a difference in people's lives by educating them about their
+            dogs and their dogs about them!
           </div>
           <div className="about-me-entry">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut
-            inventore et odit nam, eaque, ipsa, expedita modi sint fugit
-            dolores? Quam nam laudantium expedita delectus dolorum laborum
-            repellendus eius!
+            Marguerite is committed to finding solutions that fit each owner and
+            dog's needs on an individual basis as no dog or human is alike. By
+            attending several seminars a year and staying on top of industry
+            standards, Marguerite is committed to continuing her education and
+            professional development as a dog trainer and behaviorist.
           </div>
           <div className="about-me-entry">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut
-            inventore et odit nam, eaque, ipsa, expedita modi sint fugit
-            dolores? Quam nam laudantium expedita delectus dolorum laborum
-            repellendus eius!
+            When not spending time with clients and helping them enjoy easier
+            lives with their pets, Marguerite spends time with her own two dogs,
+            Bella and Meera, and her husband and co-founder of Gold Standard Dog
+            Training, Cory. She loves going on long evening walks with the whole
+            family to end her day (with perfect off-leash heals, of course!) and
+            can't wait to bring that peace and confidence into the lives of her
+            clients.
           </div>
         </div>
         <div className="profile-picture">
@@ -47,7 +53,8 @@ const AboutMe = () => {
             born. He learned the value of high quality dog training (and high
             quality follow-ups!) when he sent his German Shepherd, Bella, away
             to be trained. Because the trainer provided little to up follow-up
-            time, Bella soon reverted back to her pre-training self. How Frustrating!
+            time, Bella soon reverted back to her pre-training self. How
+            Frustrating!
           </div>
           <div className="about-me-entry">
             After Cory met Marguerite, she soon saw to it that Bella was
