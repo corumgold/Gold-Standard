@@ -15,28 +15,22 @@ const AboutMe = () => {
         </div>
         <div id="about-me-block">
           <div className="about-me-entry">
-            Marguerite is an AKC Certified Dog Trainer, AKC Fit Dog Instructor,
-            and an IACP Associate Member with 7+ years of professional
-            experience. Her experience ranges from obedience training, behavior
-            modification, and reactivity/aggression rehabilitation. She loves
-            making a difference in people's lives by educating them about their
-            dogs and their dogs about them!
+            Marguerite is a seasoned dog trainer with over 7 years of expertise
+            in obedience, behavior modification, and aggression rehab. As an AKC
+            Certified Trainer and IACP Associate Member, she offers tailored
+            solutions that bring peace and confidence to both dogs and their
+            owners.
           </div>
           <div className="about-me-entry">
-            Marguerite is committed to finding solutions that fit each owner and
-            dog's needs on an individual basis as no dog or human is alike. By
-            attending several seminars a year and staying on top of industry
-            standards, Marguerite is committed to continuing her education and
-            professional development as a dog trainer and behaviorist.
-          </div>
-          <div className="about-me-entry">
-            When not spending time with clients and helping them enjoy easier
-            lives with their pets, Marguerite spends time with her own two dogs,
-            Bella and Meera, and her husband and co-founder of Gold Standard Dog
-            Training, Cory. She loves going on long evening walks with the whole
-            family to end her day (with perfect off-leash heals, of course!) and
-            can't wait to bring that peace and confidence into the lives of her
-            clients.
+            <strong>Credentials & Specialties</strong>
+            <ul>
+              <li>AKC Certified Dog Trainer</li>
+              <li>AKC Fit Dog Instructor</li>
+              <li>IACP Associate Member</li>
+              <li>Obedience Training</li>
+              <li>Behavior Modification</li>
+              <li>Aggression Rehabilitation</li>
+            </ul>
           </div>
         </div>
         <div className="profile-picture">
@@ -49,23 +43,14 @@ const AboutMe = () => {
         </div>
         <div id="about-me-block">
           <div className="about-me-entry">
-            Cory has had the pleasure of being around dogs since the day he was
-            born. He learned the value of high quality dog training (and high
-            quality follow-ups!) when he sent his German Shepherd, Bella, away
-            to be trained. Because the trainer provided little to no follow-up
-            time, Bella soon reverted back to her pre-training self. How
-            Frustrating!
-          </div>
-          <div className="about-me-entry">
-            After Cory met Marguerite, she soon saw to it that Bella was
-            properly trained. They worked together and soon Bella was walking
-            off leash, placing on command, and just overall a happier dog.
-          </div>
-          <div className="about-me-entry">
-            Today, Bella is doing great (along with her sister, Meera!) and Cory
-            and Marguerite have pledged to help as many dogs as they can open up
-            a clear line of communication with their humans so they can live
-            happily together.
+            Cory has had a lifelong love for dogs since the day he was born. He
+            became passionate about dog training after a frustrating experience
+            with Bella, his German Shepherd, who reverted to her old habits due
+            to a lack of follow-up from the trainer he sought out. Luckily, when
+            he met Marguerite, they teamed up to train Bella, and she became a
+            happier, well-behaved dog. Now, Cory and Marguerite are on a mission
+            to help more dogs and their owners communicate better for a happier
+            life together.
           </div>
         </div>
       </>
