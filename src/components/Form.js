@@ -12,6 +12,7 @@ const Form = () => {
     crateTrained: "",
     bite: "",
     background: "",
+    heardAboutUs: ""
   });
 
   const [modalShown, setModalShown] = useState(false);
@@ -20,6 +21,7 @@ const Form = () => {
     const key = e.target.name;
     const value = e.target.value;
     setFormInfo({ ...formInfo, [key]: value });
+    console.log(formInfo)
   }
 
   const form = useRef();
@@ -40,6 +42,18 @@ const Form = () => {
             "Thank you for submitting your info! We will be in contact with you soon."
           );
           console.log(result.text);
+          setFormInfo({
+            humanName: "",
+            phone: "",
+            email: "",
+            dogName: "",
+            dogAge: "",
+            breed: "",
+            crateTrained: "",
+            bite: "",
+            background: "",
+            heardAboutUs: ""
+          });
         },
         (error) => {
           setModalShown(
@@ -111,6 +125,10 @@ const Form = () => {
             <input type="text" name="biteDetails" onChange={handleFormChange} />
           </label>
         ) : null}
+        <label>
+          How did you hear about us?:
+          <input type="text" name="heardAboutUs" onChange={handleFormChange} />
+        </label>
         <label>
           Anything else?
           <textarea style={{width: "100%"}} type="text" name="background" onChange={handleFormChange} />
