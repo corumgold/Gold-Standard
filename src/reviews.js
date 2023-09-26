@@ -2,6 +2,7 @@ const reviews = [
   {
     id: 1,
     title: "June",
+    parent: "Parents",
     image: process.env.PUBLIC_URL + `/images/june.png`,
     altText: "June image",
     description:
@@ -11,6 +12,7 @@ const reviews = [
   {
     id: 2,
     title: "Bindy & Calvin",
+    parent: "Mom",
     image: process.env.PUBLIC_URL + `/images/bindyandcalvin.png`,
     altText: "Bandy and Calvin image",
     description:
@@ -20,6 +22,7 @@ const reviews = [
   {
     id: 3,
     title: "Chico",
+    parent: "Mom",
     image: process.env.PUBLIC_URL + `/images/chico.png`,
     altText: "Chico sleeping image",
     description:

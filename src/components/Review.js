@@ -27,7 +27,7 @@ const Review = ({ review }) => {
       <div className="project-details">
         <div className="project-content">
           <h3>{review.title}</h3>
-          <p>"{review.description}"</p>
+          <p>&#8220;{review.description}&#8221; &mdash; {review.title}'s {review.parent}</p>
           <div className="project-tools">
             {review.tools.map((tool) => {
               return <p className="tool">{tool}</p>;
