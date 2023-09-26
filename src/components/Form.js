@@ -112,8 +112,8 @@ const Form = () => {
           </label>
         ) : null}
         <label>
-          Any other details we should know?:
-          <input type="text" name="background" onChange={handleFormChange} />
+          Anything else?
+          <textarea style={{width: "100%"}} type="text" name="background" onChange={handleFormChange} />
         </label>
         <button onClick={sendEmail}>Submit Form</button>
       </form>

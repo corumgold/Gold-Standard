@@ -24,6 +24,7 @@
 }
 .hero p {
   font-size: 3rem;
+  font-family: "Raleway", sans-serif;
   max-width: 700px;
   animation: slideUp 1.5s;
 }
@@ -37,6 +38,7 @@
 .intro span {
   color: #ffd700;
   font-weight: bold;
+  font-family: "Raleway", sans-serif;
 }
 @keyframes fadeIn {
   from {
@@ -56,6 +58,7 @@
 }
 .intro h1 {
   font-size: 7rem;
+  font-family: "Raleway", sans-serif;
   color: #ffd700;
   animation: fadeIn 2s;
 }
@@ -86,9 +89,10 @@
 }
 h2.big-header {
   color: #414040;
+  font-family: "Raleway", sans-serif;
 }
 .about-me {
-  background-color: #bbb;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,8 +120,8 @@ h2.big-header {
 }
 #about-me-block {
   background-color: white;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 25px;
+  border: 3px solid #ffd700;
   margin-bottom: 3em;
 }
 .about-me-entry {
@@ -149,6 +153,7 @@ h2.big-header {
 }
 h3 {
   font-size: 4rem;
+  font-family: "Raleway", sans-serif;
   color: #ffd700;
   margin-bottom: 1em;
 }
@@ -167,6 +172,7 @@ h3:after {
 }
 .about-me h4 {
   font-size: 3rem;
+  font-family: "Raleway", sans-serif;
   color: #ffd700;
   display: flex;
   align-items: center;
@@ -179,6 +185,7 @@ h3:after {
 }
 .about-me h5 {
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
   color: #14213d;
   text-align: center;
   display: flex;
@@ -231,10 +238,10 @@ h3:after {
 .project-content {
   padding: 2rem;
   line-height: 2rem;
-  background-color: #bbb;
+  background-color: white;
   color: #14213d;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 25px;
+  border: 3px solid #ffd700;
 }
 @media screen and (max-width: 480px) {
   .project-content {
@@ -247,6 +254,7 @@ h3:after {
 }
 .project-content h3 {
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 2rem;
 }
 .project-content h3:after {
@@ -261,7 +269,7 @@ h3:after {
   justify-content: center;
   padding: 0.5rem;
   margin: 8px;
-  background-color: #bbb;
+  background-color: white;
   border-radius: 10px;
   font: inherit;
   font-weight: 700;
@@ -293,12 +301,12 @@ h3:after {
   }
 }
 .tool {
-  border: 2px solid #ffd700;
-  color: white;
+  background-color: #ffd700;
+  color: #414040;
   font-weight: bold;
   margin: 0.5rem;
   padding: 0 0.5rem;
-  border-radius: 5px;
+  border-radius: 500px;
 }
 .project-image img {
   width: 100%;
@@ -381,6 +389,7 @@ h3:after {
 }
 .brand-title {
   font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
   margin: 0.5rem;
   letter-spacing: 0.2rem;
 }
@@ -396,11 +405,12 @@ h3:after {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 3px;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   transition: 200ms;
 }
 .nav-links a:hover {
-  color: #bbb;
+  color: white;
 }
 .nav-icon {
   width: 15px;
@@ -471,7 +481,7 @@ h3:after {
   justify-content: center;
   flex-direction: column;
   padding: 6rem 2rem;
-  background-color: #bbb;
+  background-color: white;
 }
 #form-page h2 {
   border-bottom: 1px solid #ffd700;
@@ -491,8 +501,8 @@ h3:after {
   margin: 0 auto;
   max-width: 500px;
   padding: 30px 50px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 25px;
+  border: 3px solid #ffd700;
   margin-bottom: 3em;
 }
 #consult-form input {
@@ -505,24 +515,26 @@ h3:after {
 #consult-form label {
   color: #3d3d3d;
   display: block;
-  font-family: sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 2em;
   text-align: left;
 }
 #consult-form button {
   background: none;
   color: inherit;
-  border: 4px solid #ffd700;
   border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: #ffd700;
   padding: 0.5em;
-  font: inherit;
   cursor: pointer;
 }
 #consult-form button:hover {
-  background-color: #ffd700;
   transition: 200ms;
+  color: white;
 }
 .showModal {
   width: 60vw;
@@ -686,10 +698,52 @@ h3:after {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCP.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtmZnEGE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtrhnEGE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnEGE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQttRnEGE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtjhgEGE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/assistant/v19/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtgFgEGE.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Assistant', sans-serif;
   color: #414040;
   box-sizing: border-box;
 }
