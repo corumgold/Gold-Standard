@@ -52,7 +52,7 @@ const AboutMe = () => {
             Cory has had the pleasure of being around dogs since the day he was
             born. He learned the value of high quality dog training (and high
             quality follow-ups!) when he sent his German Shepherd, Bella, away
-            to be trained. Because the trainer provided little to up follow-up
+            to be trained. Because the trainer provided little to no follow-up
             time, Bella soon reverted back to her pre-training self. How
             Frustrating!
           </div>
