@@ -65,7 +65,7 @@ const Form = () => {
   };
 
   return (
-    <div id="form-page">
+    <section id="form-page">
       <h3>Contact Us</h3>
       <form ref={form} id="consult-form">
         <label>
@@ -139,7 +139,7 @@ const Form = () => {
         {modalShown}
         <button onClick={() => setModalShown(false)}>Close</button>
       </div>
-    </div>
+    </section>
   );
 };
 

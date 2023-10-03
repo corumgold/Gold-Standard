@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div id="footer" className="footer">
+    <section id="footer" className="footer">
       <div className="links">
         <a href="mailto:goldstandard.dog@gmail.com">
           <img
@@ -31,7 +31,7 @@ const Footer = () => {
         </a>
       </div>
       <p>Created with love by Cory Gold | © twentytwentythree</p>
-    </div>
+    </section>
   );
 };
 
