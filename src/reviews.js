@@ -1,6 +1,16 @@
 const reviews = [
   {
     id: 1,
+    title: "Cooper",
+    parent: "Parents",
+    image: process.env.PUBLIC_URL + `/images/cooper.png`,
+    altText: "Well-behaved sitting german short-haired pointer trained in obedience",
+    description:
+      "They were always very and quickly responsive when we checked in on Cooper, and we felt like they loved him like he was their own dog, just as much as we did... We cannot recommend Marguerite, Cory, and Gold Standard strongly enough.",
+    tools: ["Walking on Leash", "Separation Anxiety", "Possessiveness", "Reactivity"],
+  },
+  {
+    id: 1,
     title: "June",
     parent: "Parents",
     image: process.env.PUBLIC_URL + `/images/june.png`,
